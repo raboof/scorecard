@@ -27,7 +27,7 @@ const CheckCodeReview = "Code-Review"
 
 //nolint:gochecknoinits
 func init() {
-	if err := registerCheck(CheckCodeReview, DoesCodeReview); err != nil {
+	if err := registerCheck(CheckCodeReview, DoesCodeReview, nil); err != nil {
 		// this should never happen
 		panic(err)
 	}
